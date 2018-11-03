@@ -4,7 +4,7 @@
 # @Author  ：SunWang
 # @File    ：demon1.py
 
-#2.1python运算符
+#2.1 python运算符
 # 数字运算符  + - * / %
 # 关系运算符   a == b   a > b  a > b a!=b >= <=
 # 赋值运算符  a=b += -= *= /=
