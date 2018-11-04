@@ -49,8 +49,8 @@ print("hel"+"lo")
 #结果:hello
 
 #join(可迭代的对象)  #一般是一个list
-newList = string.strip().split('a')
-print(" ### ".join(newList))
+# newList = string.strip().split('a')
+# print(" ### ".join(newList))
 #结果：### b ### cd ### ef ### gh ### i ### g ### h
 
 
