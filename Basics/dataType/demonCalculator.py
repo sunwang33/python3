@@ -55,3 +55,4 @@ if __name__ == '__main__':
     if method == 1:
         print("例子: a + b + c + d")
         str = input("###: ")
+#20181106
