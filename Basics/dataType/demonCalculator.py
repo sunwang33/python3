@@ -52,15 +52,20 @@ if __name__ == '__main__':
     print("3： 乘法: a * b * c * d * ...")
     print("4： 除法: a / b / c / d / ...")
     method = input("Please input a number(1/2/3/4): ")
-    string = input("请输入您最终的表达式：")
     if method == "1":
+        string = input("请输入您最终的表达式：")
         add(string)
     elif method == "2":
+        string = input("请输入您最终的表达式：")
         reduce(string)
     elif method == "3":
+        string = input("请输入您最终的表达式：")
         ride(string)
     elif method == "4":
+        string = input("请输入您最终的表达式：")
         division(string)
     else:
         print("The string of your input is error!")
+
+    #20181107b
 
