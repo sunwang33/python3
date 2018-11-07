@@ -17,11 +17,11 @@ def add(string):
 def reduce(string):
     result = 0
     numbers = []
-    numbers +=string.split("-").strip()
-    result = int(numbers[0])
+    numbers +=string.split("-")
+    result = int(numbers[0].strip())
     numbers.pop(0)
     for num in numbers:
-        result -= num
+        result -= int(num.strip())
     print("{0} = {1}".format(string, result))
 
 def ride(string):
@@ -35,10 +35,11 @@ def ride(string):
 def division(string):
     result = 0
     numbers = []
-    numbers += string.split("/").strip()
-    result = numbers[0]
+    numbers += string.split("/")
+    result = int(numbers[0].strip())
+    numbers.pop(0)
     for num in numbers:
-        result /= int(num)
+        result /= int(num.strip())
     print("{0} = {1}".format(string, result))
 
 
@@ -51,8 +52,15 @@ if __name__ == '__main__':
     print("3： 乘法: a * b * c * d * ...")
     print("4： 除法: a / b / c / d / ...")
     method = input("Please input a number(1/2/3/4): ")
-    str = input("请输入您最终的表达式：")
-    if method == 1:
-        print("例子: a + b + c + d")
-        str = input("###: ")
-#20181106d
+    string = input("请输入您最终的表达式：")
+    if method == "1":
+        add(string)
+    elif method == "2":
+        reduce(string)
+    elif method == "3":
+        ride(string)
+    elif method == "4":
+        division(string)
+    else:
+        print("The string of your input is error!")
+
